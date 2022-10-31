@@ -6,10 +6,13 @@ require('dotenv').config();
 
 const server = express();
 
-server.use(routes)
+server.use(cors())
 server.use(express.json())
 server.use(express.urlencoded({extended:true}))
-server.use(cors())
+server.use(routes)
+
+
+
 
 server.listen(process.env.PORT,() => {
     console.log(`server executando na port: ${process.env.PORT}`);
