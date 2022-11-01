@@ -107,7 +107,7 @@ const apiLocal = "http://localhost:3333/movies";
  
  ```
  
- Aós a instalção em sua maquina acesse a documentaçã das rota por aqui, <a href="https://localhost:3334/api-docs/#/Film/get_movies">clique aqui!</a>
+ Após a instalação em sua maquina acesse a documentação das rota por aqui, <a href="https://localhost:3334/api-docs/#/Film/get_movies">clique aqui!</a>
  
 
 
