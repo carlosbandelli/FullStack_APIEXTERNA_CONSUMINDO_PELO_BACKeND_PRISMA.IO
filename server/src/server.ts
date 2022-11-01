@@ -15,8 +15,8 @@ const server = express();
 server.use(cors())
 server.use(express.json())
 server.use(express.urlencoded({extended:true}))
-server.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs))
 server.use(routes)
+server.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs))
 
 
 server.listen(process.env.PORT,() => {
