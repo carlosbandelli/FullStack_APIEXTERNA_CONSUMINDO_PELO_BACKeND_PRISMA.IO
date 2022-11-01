@@ -101,7 +101,7 @@ const apiLocal = "http://localhost:3333/movies";
  Nesta parte apos instalar as dependencia vá na pasta raiz e utilize o comando
  
  ```
- npm run serve
+ npm run dev
  
  ```
  
