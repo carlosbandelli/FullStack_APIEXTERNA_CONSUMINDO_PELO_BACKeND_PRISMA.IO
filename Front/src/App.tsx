@@ -3,7 +3,7 @@ import "./App.css";
 import axios from "axios";
 import { Posts } from "./components/Posts/Post";
 
-const api = "146.190.215.239:3333/movies";
+const api = "http://146.190.215.239:3333/movies";
 
 interface propsitens {
   description: string;
@@ -25,7 +25,7 @@ export default function App() {
   console.log(itens);
 
   useEffect(() => {
-    axios(146.190.215.239:3333/movies).then((response) => {
+    axios(api).then((response) => {
       setItens(response.data);
     });
   }, []);
