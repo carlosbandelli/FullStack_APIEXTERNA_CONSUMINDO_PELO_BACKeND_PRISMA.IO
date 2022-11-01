@@ -89,10 +89,10 @@ Abra um terminal direto da pasta raiz e execute o comando no terminal
 npm install
 ```
 
-# Importante no FRONT-END, para se fazer requisição para o back-end existe 2 URL uma <strong>Local</strong> e outra <strong>Remota</strong> , por padrão ja vem configurado a local. Se quiser alterar usar a variavel já existente, abaixo estão os nomes das vaiaveis:
+# Importante no FRONT-END, para se fazer requisição para o back-end existe 2 URL uma <strong>Local</strong> e outra <strong>Remota</strong> , por padrão ja vem configurado REMOTA. Se quiser alterar usar a variavel já existente, abaixo estão os nomes das vaiaveis:
 
 ```
-const apiRemote = "http://146.190.215.239:3333/movies";
+const apiRemote = "https://146.190.215.239:3334/movies";
 const apiLocal = "http://localhost:3333/movies";
 
 ```
