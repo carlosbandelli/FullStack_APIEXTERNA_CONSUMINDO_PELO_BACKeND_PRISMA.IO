@@ -25,18 +25,4 @@ export function Posts(props: FilmsProps) {
   );
 }
 
-// export const Posts = (posts: any[]) => (
-//   <div className="posts">
-//     {posts.map((post: any) => (
-//       <PostCard
-//         key={post.id}
-//         description={post.description}
-//         director={post.director}
-//         id={""}
-//         image={post.image}
-//         producer={post.producer}
-//         title={post.title}
-//       />
-//     ))}
-//   </div>
-// );
+
