@@ -57,7 +57,11 @@ export default function App() {
           return (
             <button
               value={index}
-              onClick={(e) => setCurrentePage(Number(e.target.value))}
+              onClick={(e) =>
+                setCurrentePage(
+                  Number((e.currentTarget as HTMLInputElement).value)
+                )
+              }
             >
               {index + 1}
             </button>
