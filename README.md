@@ -20,6 +20,10 @@
 </a>
 <hr/>
 
+<div style="margin: 0 auto;">
+<img src="asset_Readme/films.webm">
+</div>
+
 ## 💡 Sobre o projeto:
 
 Este projeto faz parte de um desafio que consistia em desenvolver  uma aplicação consumisse uma api externa e gravasse no banco de dados e usasse essas informação para exibição no front-end. Sobre a parte técnica do desafio foi requisitado a utilização das seguintes tecnologias. Para Back-end: Node.js e  banco de dados. Para o Front-end foram utilizadas as tecnologias Vite.js+ React + Typescript. 
