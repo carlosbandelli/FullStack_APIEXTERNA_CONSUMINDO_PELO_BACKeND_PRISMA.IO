@@ -105,5 +105,9 @@ const apiLocal = "http://localhost:3333/movies";
  
  ```
  
+ Para saber uma documentação sobre as rotas da API, <a href="https://localhost:3334/api-docs/#/Film/get_movies">clique aqui!</a>
+ 
+
+
 
 
