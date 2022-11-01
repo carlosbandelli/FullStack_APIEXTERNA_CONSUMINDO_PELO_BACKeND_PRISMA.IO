@@ -21,7 +21,7 @@
 <hr/>
 
 <div style="margin: 0 auto;">
-<img src="asset_Readme/films.webm">
+<img src="asset_Readme/films.gif">
 </div>
 
 ## 💡 Sobre o projeto:
