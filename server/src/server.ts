@@ -12,7 +12,12 @@ require('dotenv').config();
 
 const server = express();
 server.enable("trust proxy");
-server.use(cors())
+server.use(cors({
+    allowedHeaders: "*",
+    origin:"*",
+    
+}))
+
 server.use(express.json())
 server.use(express.urlencoded({extended:true}))
 server.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs))
