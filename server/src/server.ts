@@ -11,13 +11,7 @@ import routes from './routes';
 require('dotenv').config();
 
 const server = express();
- server.enable("trust proxy");
- server.use(function(req, res, next) {
-    if (req.secure){
-      return next();
-    }
-    res.redirect("https://" + req.headers.host + req.url);
-  });
+server.enable("trust proxy");
 server.use(cors())
 server.use(express.json())
 server.use(express.urlencoded({extended:true}))
