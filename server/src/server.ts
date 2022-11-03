@@ -12,6 +12,13 @@ require('dotenv').config();
 
 const server = express();
 server.enable("trust proxy");
+server.use((req, res, next) => { 
+    if (req.secure) 
+        next(); 
+    else 
+        res.redirect('https://146.190.215.239:3334/movies'); 
+});
+
 server.use(cors({
     allowedHeaders: "*",
     origin:"*",
