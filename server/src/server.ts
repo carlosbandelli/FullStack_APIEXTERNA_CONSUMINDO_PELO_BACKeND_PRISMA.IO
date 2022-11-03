@@ -12,18 +12,25 @@ require('dotenv').config();
 
 const server = express();
 server.enable("trust proxy");
-server.use((req, res, next) => { 
-    if (req.secure) 
-        next(); 
-    else 
-        res.redirect(`https://${req.hostname}${req.url}`); 
-});
+// server.use((req, res, next) => { 
+//     if (req.secure) 
+//         next(); 
+//     else 
+//         res.redirect(`https://${req.hostname}${req.url}`); 
+// });
 
 server.use(cors({
     allowedHeaders: "*",
     origin:"*",
     
 }))
+
+server.use((req, res, next) => { 
+    if (req.secure) 
+        next(); 
+    else 
+        res.redirect(`https://${req.hostname}${req.url}`); 
+});
 
 server.use(express.json())
 server.use(express.urlencoded({extended:true}))
