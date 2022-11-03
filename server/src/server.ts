@@ -11,11 +11,20 @@ import routes from './routes';
 require('dotenv').config();
 
 const server = express();
-
+ server.enable("trust proxy");
+ server.use(function(req, res, next) {
+    if (req.secure){
+      return next();
+    }
+    res.redirect("https://" + req.headers.host + req.url);
+  });
 server.use(cors())
 server.use(express.json())
 server.use(express.urlencoded({extended:true}))
 server.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs))
+
+
+
 server.use(routes)
 
 
