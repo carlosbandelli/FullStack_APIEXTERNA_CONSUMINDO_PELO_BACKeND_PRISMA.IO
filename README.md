@@ -2,7 +2,7 @@
 
  Projeto comsumo de API externa gravando no banco de dados
  
- <a href="https://front-end-theta-five.vercel.app/">Clique aqui para acessar a pagina e ver minha aplicação</a>
+ <a href="https://glittering-cheesecake-53646f.netlify.app/">Clique aqui para acessar a pagina e ver minha aplicação</a>
 
 
 <a href="https://github.com/carlosbandelli">
