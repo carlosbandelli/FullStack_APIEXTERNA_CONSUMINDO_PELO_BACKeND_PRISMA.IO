@@ -108,7 +108,12 @@ const apiLocal = "http://localhost:3333/movies";
  ```
  
  Após a instalação em sua maquina acesse a documentação das rota por aqui, <a href="https://localhost:3334/api-docs/#/Film/get_movies">clique aqui!</a>
- 
+
+Para consumo da api use o método Get na  URL abaixo:
+
+```
+https://146.190.215.239:3334/movies
+```
 
 
 
