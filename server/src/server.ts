@@ -16,7 +16,7 @@ server.use((req, res, next) => {
     if (req.secure) 
         next(); 
     else 
-        res.redirect(`https://146.190.215.239:3334${req.url}`); 
+        res.redirect(`https://${req.hostname}${req.url}`); 
 });
 
 server.use(cors({
