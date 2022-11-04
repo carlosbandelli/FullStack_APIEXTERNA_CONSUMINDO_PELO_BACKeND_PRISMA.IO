@@ -27,11 +27,7 @@ export default function App() {
 
    useEffect(() => {
     if (location.protocol !== "https:") {
-      console.log(`cheguei : ${location.protocol}`);
-      const httpsURL = `https://${location.hostname}:3334${location.pathname}`;
-      console.log(`cheguei : ${httpsURL}`);
-      location.replace(httpsURL);
-      axios(httpsURL).then((response) => {
+      axios(apiRemote).then((response) => {
         setItens(response.data);
       });
     }
