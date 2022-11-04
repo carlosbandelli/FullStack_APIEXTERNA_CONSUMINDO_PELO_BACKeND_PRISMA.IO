@@ -27,11 +27,10 @@ export default function App() {
 
   useEffect(() => {
     if (location.protocol !== "https:") {
-      const httpsURL = "https://" + location.href.split("//")[1];
+      const httpsURL = "https://" + "146.190.215.239:3334/movies";
       console.log(httpsURL);
       location.replace(httpsURL);
       axios(httpsURL).then((response) => {
-        console.log(response.data)
         setItens(response.data);
       });
     }
