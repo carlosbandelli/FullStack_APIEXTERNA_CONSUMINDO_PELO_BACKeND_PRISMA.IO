@@ -27,8 +27,9 @@ export default function App() {
 
   useEffect(() => {
     if (location.protocol !== "https:") {
+      console.log(`cheguei : ${location.protocol}`);
       const httpsURL = "https://" + "146.190.215.239:3334/movies";
-      console.log(httpsURL);
+      console.log(`cheguei : ${httpsURL}`);
       location.replace(httpsURL);
       axios(httpsURL).then((response) => {
         setItens(response.data);
