@@ -31,6 +31,9 @@ export default function App() {
         setItens(response.data);
       });
     }
+    axios(apiRemote).then((response) => {
+      setItens(response.data);
+    });
   }, []);
 
 
