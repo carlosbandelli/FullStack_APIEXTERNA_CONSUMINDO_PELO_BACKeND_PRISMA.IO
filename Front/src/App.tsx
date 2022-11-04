@@ -25,10 +25,10 @@ export default function App() {
   const currentItens = itens.slice(startIndex, endIndex);
   console.log(itens);
 
-  useEffect(() => {
+   useEffect(() => {
     if (location.protocol !== "https:") {
       console.log(`cheguei : ${location.protocol}`);
-      const httpsURL = "https://" + "146.190.215.239:3334/movies";
+      const httpsURL = `https://${location.hostname}:3334${location.pathname}`;
       console.log(`cheguei : ${httpsURL}`);
       location.replace(httpsURL);
       axios(httpsURL).then((response) => {
@@ -36,6 +36,7 @@ export default function App() {
       });
     }
   }, []);
+
 
   const shuffleList = (list: any[]) => list.sort(() => Math.random() - 0.5);
   const handleShuffle = () => {
