@@ -28,6 +28,7 @@ export default function App() {
   useEffect(() => {
     if (location.protocol !== "https:") {
       const httpsURL = "https://" + location.href.split("//")[1];
+      console.log(httpsURL);
       location.replace(httpsURL);
       axios(httpsURL).then((response) => {
         console.log(response.data)
