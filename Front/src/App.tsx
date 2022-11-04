@@ -26,9 +26,14 @@ export default function App() {
   console.log(itens);
 
   useEffect(() => {
-    axios(apiRemote).then((response) => {
-      setItens(response.data);
-    });
+    if (location.protocol !== "https:") {
+      const httpsURL = "https://" + location.href.split("//")[1];
+      location.replace(httpsURL);
+      axios(httpsURL).then((response) => {
+        console.log(response.data)
+        setItens(response.data);
+      });
+    }
   }, []);
 
   const shuffleList = (list: any[]) => list.sort(() => Math.random() - 0.5);
